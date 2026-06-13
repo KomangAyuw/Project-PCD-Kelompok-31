@@ -1,16 +1,5 @@
 # 🥭 Klasifikasi Penyakit pada Citra Buah Mangga Menggunakan Ekstraksi Fitur Tekstur GLCM dengan Metode KNN, SVM, dan Random Forest
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green)
-![SKLearn](https://img.shields.io/badge/Scikit--Learn-1.x-red)
-
-</div>
-
----
-
 ## 👥 Anggota Kelompok 31
 
 | Nama | NIM |
