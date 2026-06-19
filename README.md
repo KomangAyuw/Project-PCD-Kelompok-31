@@ -61,6 +61,14 @@ Pipeline preprocessing:
 3. **Morphology Opening** — Membersihkan noise kecil pada hasil segmentasi Otsu
 4. **Masking** — Mengisolasi area bercak penyakit dan meng-overlay warna kuning sebagai visualisasi
 
+### Percobaan 3
+Pipeline preprocessing:
+1. **Contrast Stretching** — Memperluas rentang dinamis intensitas piksel untuk meningkatkan kontras visual objek.
+2. **Median Filter** — Mengurangi noise salt-and-pepper sambil mempertahankan tepi bercak penyakit.
+3. **Gaussian Blur** — Menghaluskan citra untuk mereduksi noise acak dan detail tekstur yang kurang relevan sebelum deteksi tepi.
+4. **Sharpening** — Memperjelas tepi dan detail objek agar fitur tekstur lebih menonjol.
+5. **Prewitt Edge** — Mendeteksi tepi objek dengan operator gradien untuk mempertegas batas struktur visual.
+6. **Otsu Thresholding** — Segmentasi otomatis area bercak penyakit berdasarkan ambang batas intensitas optimal.
 
 ---
 
@@ -68,13 +76,11 @@ Pipeline preprocessing:
 
 ### Ringkasan Akurasi (Testing)
 
-| Model | Baseline | Percobaan 1 | Percobaan 2 |
-|-------|:--------:|:-----------:|:-----------:|
-| Random Forest | 83.75% | - | 73.75% |
-| SVM | 83.75% | - | 78.75% |
-| KNN | **85.00%** | - | 78.75% |
-
-*(Percobaan 1 dan 3 akan diupdate setelah selesai)*
+| Model | Baseline | Percobaan 1 | Percobaan 2 | Percobaan 3 |
+|-------|:--------:|:-----------:|:-----------:|:-----------:|
+| Random Forest | 83.75% | 71.25% | 73.75% | 70.00% |
+| SVM | 83.75% | 76.25% | 78.75% | 71.25% |
+| KNN | **85.00%** | 75.00% | 78.75% | 68.75% |
 
 ---
 
@@ -95,10 +101,13 @@ Project-PCD-Kelompok-31/
 │   ├── Healthy/
 │   └── Stem and Rot/
 │
-├── tanpa_preprocessing.ipynb       # Baseline
-├── percobaan1.ipynb                # Percobaan 1: Histogram Equalization + Median
-├── percobaan2.ipynb                # Percobaan 2: Median + Otsu + Opening + Masking
+├── tanpa_preprocessing.ipynb  # Baseline
+├── percobaan1.ipynb           # Percobaan 1: Histogram Equalization + Median
+├── percobaan2.ipynb           # Percobaan 2: Median + Otsu + Opening + Masking
+├── percobaan3.ipynb           # Percobaan 3: Contrast Stretching + Median Filter + Gaussian Blur + Sharpening + Prewitt Edge + Otsu Thresholding
 │
 ├── hasil_ekstraksi_baseline.csv
+└── hasil_ekstraksi_percobaan1.csv
 └── hasil_ekstraksi_percobaan2.csv
+└── hasil_ekstraksi_percobaan3.csv
 ```
