@@ -104,7 +104,7 @@ Project-PCD-Kelompok-31/
 ├── tanpa_preprocessing.ipynb  # Baseline
 ├── percobaan1.ipynb           # Percobaan 1: Histogram Equalization + Median
 ├── percobaan2.ipynb           # Percobaan 2: Median + Otsu + Opening + Masking
-├── percobaan3.ipynb           # Percobaan 3: Contrast Stretching + Median Filter + Gaussian Blur + Sharpening + Prewitt Edge + │                                Otsu Thresholding
+├── percobaan3.ipynb           # Percobaan 3: Contrast Stretching + Median Filter + Gaussian Blur + Sharpening + Prewitt Edge + Otsu Thresholding
 │
 ├── hasil_ekstraksi_baseline.csv
 └── hasil_ekstraksi_percobaan1.csv
